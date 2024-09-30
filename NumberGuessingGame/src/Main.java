@@ -6,11 +6,9 @@ public class Main {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
-            e.printStackTrace( );
+            e.printStackTrace();
         }
         // 显示登录界面
-        SwingUtilities.invokeLater(() -> {
-            new LoginUI();
-        });
+        SwingUtilities.invokeLater(() -> new LoginUI());
     }
 }
