@@ -1,7 +1,7 @@
 public class Pet {
-    private int hunger; // 0-100，100表示非常饥饿
-    private int happiness; // 0-100，100表示非常开心
-    private int fatigue; // 0-100，100表示非常疲惫
+    private int hunger; 
+    private int happiness; 
+    private int fatigue;
 
     public Pet(int hunger, int happiness, int fatigue) {
         this.hunger = hunger;
@@ -9,13 +9,12 @@ public class Pet {
         this.fatigue = fatigue;
     }
 
-    // Getter 和 Setter 方法
     public int getHunger() {
         return hunger;
     }
 
     public void feed() {
-        hunger = Math.max(hunger - 10, 0); // 喂食减少饥饿值
+        hunger = Math.max(hunger - 10, 0);
     }
 
     public int getHappiness() {
@@ -23,7 +22,7 @@ public class Pet {
     }
 
     public void play() {
-        happiness = Math.min(happiness + 10, 100); // 娱乐增加快乐值
+        happiness = Math.min(happiness + 10, 100); 
     }
 
     public int getFatigue() {
@@ -31,6 +30,6 @@ public class Pet {
     }
 
     public void rest() {
-        fatigue = Math.max(fatigue - 10, 0); // 休息减少疲劳值
+        fatigue = Math.max(fatigue - 10, 0);
     }
 }
