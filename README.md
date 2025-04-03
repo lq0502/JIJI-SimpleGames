@@ -3,7 +3,7 @@
 Javaの基礎知識を実践し、基本的なUI開発とデータベース連携を示すことを目的としています。
 
 ## 開発環境
-Java Swing（UI）、Java（コード）、SQLite（データベース）
+Java Swing（UI）、Java（コード）、HTML、SQLite（データベース）
 
 ## 主要機能
 
