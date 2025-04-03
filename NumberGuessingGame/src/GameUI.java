@@ -18,7 +18,7 @@ public class GameUI extends JFrame {
         setTitle("数字当てゲーム");
         setSize(400, 250);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // 居中显示
+        setLocationRelativeTo(null); 
 
         JPanel panel = new JPanel();
         add(panel);
@@ -106,7 +106,7 @@ public class GameUI extends JFrame {
     }
 
     private void viewHistory() {
-        // 从数据库中检索历史记录
+        // SQL
         try {
             Connection conn = DriverManager.getConnection("jdbc:sqlite:game.db");
             String sql = "SELECT * FROM history WHERE username = ?";
